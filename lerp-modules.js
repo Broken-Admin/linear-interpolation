@@ -33,7 +33,7 @@ function inverseLerp(a, b, i) {
   // Calculate t in relation to range [a,b].
   let t = (i - a) / (b - a);
   // t should not be out of range [0,1].
-  // Clam within range [0,1].
+  // Clamp within range [0,1].
   if (t > 1) t = 1;
   if (t < 0) t = 0;
   // Return value.
